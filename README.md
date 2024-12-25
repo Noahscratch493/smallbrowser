@@ -31,7 +31,7 @@ To use SmallBrowser in your web project, simply download the `smallbrowser.js` f
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Small Browser Example</title>
-    <script src="[smallbrowser.js](https://noahscratch493.github.io/smallbrowser/smallbrowser.js)"></script>
+    <script src="https://noahscratch493.github.io/smallbrowser/smallbrowser.js"></script>
 </head>
 <body>
     <button onclick="smallbrowser.open('https://www.google.com', { width: 1024, height: 768 })">
