@@ -20,7 +20,7 @@ To use SmallBrowser in your web project, simply import the `smallbrowser.js` fil
    <script src="https://noahscratch493.github.io/smallbrowser/smallbrowser.js"></script>
    ```
 
-3. **Call the `smallbrowser.open()` function** in your code with the desired URL and options.
+2. **Call the `smallbrowser.open()` function** in your code with the desired URL and options.
 
 ### Example HTML:
 
