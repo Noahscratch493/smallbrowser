@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SmallBrowser</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <style>
+        /* Base styling */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        
+        .light-mode {
+            background-color: #f0f4f8;
+            color: #2d3748;
+        }
+        
+        .dark-mode {
+            background-color: #1a202c;
+            color: #e2e8f0;
+        }
+        
+        /* General container for the page */
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            padding: 20px;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 3rem;
+            font-weight: bold;
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+        }
+
+        h1 i {
+            font-size: 3rem;
+            margin-right: 0.5rem; /* Space between icon and text */
+        }
+
+        p {
+            font-size: 1.25rem;
+            margin-bottom: 2rem;
+        }
+
+        /* Button styling */
+        .button {
+            background-color: #4299e1;
+            color: white;
+            padding: 12px 24px;
+            font-size: 1.125rem;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .button:hover {
+            background-color: #3182ce;
+        }
+
+        /* Dark Mode Toggle */
+        .dark-mode-toggle {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background-color: #3182ce;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1rem;
+            cursor: pointer;
+            border-radius: 8px;
+        }
+
+        /* Features section styling */
+        .features {
+            display: flex;
+            justify-content: center;
+            gap: 3rem;
+            margin-top: 4rem;
+            flex-wrap: wrap;
+        }
+
+        .feature {
+            text-align: center;
+            max-width: 200px;
+        }
+
+        .feature i {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .feature p {
+            font-size: 1.125rem;
+            margin-top: 1rem;
+        }
+
+        /* Footer */
+        footer {
+            margin-top: 4rem;
+            font-size: 1rem;
+        }
+
+        /* Message styling */
+        .message {
+            font-size: 1.125rem;
+            color: #4a5568;
+            margin-top: 2rem;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body class="light-mode">
+    <div class="container">
+        <!-- Dark Mode Toggle Button -->
+        <button class="dark-mode-toggle" onclick="toggleDarkMode()">Toggle Dark Mode</button>
+
+        <!-- Main content -->
+        <h1>
+            <i class="fas fa-globe"></i> <!-- Internet icon next to SmallBrowser -->
+            SmallBrowser
+        </h1>
+        <p>A lightweight browser that keeps things simple and fast</p>
+        <button class="button" onclick="openBrowser()">Open Browser</button>
+
+        <!-- Features Section -->
+        <div class="features">
+            <div class="feature">
+                <i class="fas fa-feather-alt"></i>
+                <p><strong>Lightweight</strong><br>SmallBrowser keeps your experience fast and simple with minimal system requirements.</p>
+            </div>
+            <div class="feature">
+                <i class="fas fa-bolt"></i>
+                <p><strong>Fast</strong><br>Enjoy a fast browsing experience without distractions or unnecessary elements.</p>
+            </div>
+            <div class="feature">
+                <i class="fas fa-shield-alt"></i>
+                <p><strong>Secure</strong><br>Your privacy and security are prioritized with SmallBrowser's simplified browsing.</p>
+            </div>
+        </div>
+
+        <!-- Browsing Experience Message -->
+        <div class="message">
+            <p>The browsing experience will change based on what browser you're using. 
+            <p>SmallBrowser doesn't work on Mobile Devices</p>
+        </div>
+
+        <!-- Footer -->
+        <footer>
+            <p>© 2024 SmallBrowser. All rights reserved.</p>
+            <p>Hosted with ❤️ by NS493</p>
+        </footer>
+    </div>
+
+    <script>
+        // Function to toggle between light and dark modes
+        function toggleDarkMode() {
+            const body = document.body;
+            const currentMode = body.classList.contains('dark-mode');
+            if (currentMode) {
+                body.classList.remove('dark-mode');
+                body.classList.add('light-mode');
+            } else {
+                body.classList.remove('light-mode');
+                body.classList.add('dark-mode');
+            }
+        }
+
+        // Function to open the SmallBrowser
+        function openBrowser() {
+            window.open(
+                "https://www.google.com",
+                "SmallBrowser",
+                "width=800,height=600,resizable=yes"
+            );
+        }
+    </script>
+</body>
+</html>
