@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SmallBrowser</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <script src="https://noahscratch493.github.io/smallbrowser/smallbrowser.js"></script> <!-- Include smallbrowser.js -->
     <style>
         /* Base styling */
         body {
@@ -133,7 +134,7 @@
             SmallBrowser
         </h1>
         <p>A lightweight browser that keeps things simple and fast</p>
-        <button class="button" onclick="openBrowser()">Open Browser</button>
+        <button class="button" onclick="smallbrowser.open('https://www.google.com', { width: 800, height: 600 })">Open Browser</button>
 
         <!-- Features Section -->
         <div class="features">
@@ -176,15 +177,6 @@
                 body.classList.remove('light-mode');
                 body.classList.add('dark-mode');
             }
-        }
-
-        // Function to open the SmallBrowser
-        function openBrowser() {
-            window.open(
-                "https://www.google.com",
-                "SmallBrowser",
-                "width=800,height=600,resizable=yes"
-            );
         }
     </script>
 </body>
