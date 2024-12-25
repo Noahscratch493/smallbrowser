@@ -10,7 +10,7 @@ SmallBrowser is a simple, lightweight browser utility that allows you to open we
 
 ## Installation
 
-To use SmallBrowser in your web project, simply download the `smallbrowser.js` file and include it in your HTML or JavaScript project.
+To use SmallBrowser in your web project, simply import the `smallbrowser.js` file and include it in your HTML or JavaScript project.
 
 ### Steps:
 
