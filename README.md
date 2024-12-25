@@ -1,4 +1,4 @@
-# SmallBrowser - A Lightweight Browser that You Can Open in Your Browser!
+# SmallBrowser
 
 SmallBrowser is a simple, lightweight browser utility that allows you to open websites in a customizable, small pop-up window with adjustable properties. It's perfect for quickly viewing content without navigating away from your main page.
 
